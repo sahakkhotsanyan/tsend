@@ -1,6 +1,6 @@
 #!/usr/bin/php
 <?php
-if(isset($argv[2]) and $argv[1] == "-h"){
+if(isset($argv[1]) and $argv[1] == "-h"){
 	echo "by @sahagk\nUsage: ".$argv[0]." -u\tUpdate Configuration\n".$argv[0]." -i id\tCustom id to send.";
 	exit;
 }
