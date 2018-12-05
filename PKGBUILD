@@ -1,6 +1,6 @@
 
 pkgname=tsend
-pkgver=5.9491569
+pkgver=7.09bc1fc
 pkgrel=1
 pkgdesc='simple script to send stdout with telegram bot'
 arch=('any')
@@ -16,7 +16,9 @@ pkgver() {
 }
 package() {
   cd $pkgname
-  install -Dm 755 pkg/* "$pkgdir/usr/share/$pkgname/*"
+  install -Dm 755 pkg/colors.php "$pkgdir/usr/share/$pkgname/colors.php"
+  install -Dm 755 pkg/indent.php "$pkgdir/usr/share/$pkgname/indent.php"
+  install -Dm 755 pkg/bot.php "$pkgdir/usr/share/$pkgname/bot.php"
 	install -Dm 755 pkg/tsend "$pkgdir/usr/bin/$pkgname"
 	install -Dm 644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
 	
