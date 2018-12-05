@@ -30,7 +30,7 @@ $bot = new Bot($config['token']);
 $token = $config['token'];
 $id = $config['chat_id'];
 if(isset($argv[2]) and $argv[1] == "-i") $id = $argv[2];
-if(strlen($message) > 4096){
+if(strlen($str) > 4096){
 	$file = tmpfile();
 	$path = stream_get_meta_data($file)['uri'];
 	file_put_contents($path.".txt",$str);
