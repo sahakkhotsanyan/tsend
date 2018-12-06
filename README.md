@@ -10,6 +10,8 @@ Tool to send command STDOUT to Telegram User from configured Telegram Bot
 <code>cd /tmp</code><br>
 <code>git clone https://github.com/sahakkhotsanyan/tsend.git</code><br>
 <code>cd tsend</code><br>
+<code>sudo mkdir -p /usr/share/tsend</code><br>
+<code>sudo cp ./pkg/\* /usr/share/tsend/</code><br>
 <code>sudo cp ./pkg/tsend /bin/</code><br>
 <code>sudo chmod +x /bin/tsend</code><br>
 ### Usage
